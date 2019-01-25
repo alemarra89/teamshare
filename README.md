@@ -2,9 +2,11 @@
 # ProjectWork - teamshare
 Progetto Angular con integrazione rest Spring + Websocket
 
-*  Entrare da terminare nella cartella del progetto ed eseguire `npm install` per installarne le dipendenze.
+*  Entrare da terminale nella cartella del progetto ed eseguire `npm install` per installarne le dipendenze.
 
 *  Eseguire `ng serve` ed navigare all'indirizzo `http://localhost:4200/` per vedere l'applicazione in funzione.
+
+*  La navigazione è implementata in parte ed esiste una parziale gestione del token jwt.
 
 File di configurazione
 
