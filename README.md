@@ -1,30 +1,15 @@
-# teamshare
-Progetto Angular con integrazione Rest Spring + Websocket
 
-# ProjectWork
+# ProjectWork - teamshare
+Progetto Angular con integrazione rest Spring + Websocket
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+*  Entrare da terminare nella cartella del progetto ed eseguire `npm install` per installarne le dipendenze.
 
-## Development server
+*  Eseguire `ng serve` ed navigare all'indirizzo `http://localhost:4200/` per vedere l'applicazione in funzione.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+File di configurazione
 
-## Code scaffolding
+*  `src/environment/environment.ts`: per settare la baseUrl dei servizi rest e del server dei websocket
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*  `src/app/my-rx-stomp.config.ts`: contiene la configurazione dei websocket
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*  `src/app/features/dashboard/dashboard.component.ts`: nell'ngOnInit è contenuta la subscription ai topic '**/events/**' configurati lato server.
