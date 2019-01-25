@@ -1,0 +1,47 @@
+<!--
+<button class="btn btn-warning" (click)="connect()">
+    connetti e fai il subscribe alla websocket
+</button>
+-->
+
+<!--
+<div id="messages">
+  <button class="btn btn-primary" (click)="onSendMessage()">Send Message</button>
+  <h2>Received messages</h2>
+  <ol>
+      <li class="message" *ngFor="let message of receivedMessages">{{message}}</li>
+  </ol>
+</div>
+-->
+
+<form (submit)="inserisciPost()" #f="ngForm">
+
+  <h5 class="mt-5">Nuovo post</h5>
+
+  <div class="form-group">
+    <input type="text" class="form-control" name="titolo" ngModel placeholder="Inserisci il titolo del post" />
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="descrizione" ngModel placeholder="Inserisci la descrizione del post" />
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Crea" class="btn btn-primary btn-sm" />
+  </div>
+
+</form>
+
+<hr>
+
+<div class="card card-post mt-5" *ngFor="let post of posts">
+    <div class="card-body">
+      <h5 class="card-title">{{ post.titoloPost }}</h5>
+      <p class="card-text">{{ post.descrizionePost }}</p>
+      <a href="#" class="card-link">Commenti</a>
+      <a href="#" class="card-link">Condividi</a>
+    </div>
+  </div>
+<div>
+
+<!--
+<app-status></app-status>
+-->
